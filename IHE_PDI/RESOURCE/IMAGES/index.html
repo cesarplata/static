@@ -885,6 +885,7 @@ a:active {
 		var x2 = Math.floor(pNum/screenRes);		
 		if (lastBkg != 0)
 			document.getElementById('tblRollOver' + curStudy + lastSer + x1).rows[0].cells[lastImg%screenRes].style.background = lastBkg;//border='0';
+		console.log('tblRollOver' + curStudy + sNum + x2);
 		lastBkg = document.getElementById('tblRollOver' + curStudy + sNum + x2).rows[0].cells[pNum%screenRes].style.background;
 		document.getElementById('tblRollOver' + curStudy + sNum + x2).rows[0].cells[pNum%screenRes].style.background = 'steelblue';//border='thin solid dimgray';
 	
