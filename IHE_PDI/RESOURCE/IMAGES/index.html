@@ -883,12 +883,9 @@ a:active {
 		
 		var x1 = Math.floor(lastImg/screenRes);		
 		var x2 = Math.floor(pNum/screenRes);		
-		if (lastBkg != 0)
-			document.getElementById('tblRollOver' + curStudy + lastSer + x1).rows[0].cells[lastImg%screenRes].style.background = lastBkg;//border='0';
-		console.log('curStudy' + curStudy);
-		console.log('sNum' + sNum );
-		console.log('x2' + x2);
-		if(x2 >= 0){
+		if(x2>=0){
+			if (lastBkg != 0)
+				document.getElementById('tblRollOver' + curStudy + lastSer + x1).rows[0].cells[lastImg%screenRes].style.background = lastBkg;//border='0';
 			lastBkg = document.getElementById('tblRollOver' + curStudy + sNum + x2).rows[0].cells[pNum%screenRes].style.background;
 			document.getElementById('tblRollOver' + curStudy + sNum + x2).rows[0].cells[pNum%screenRes].style.background = 'steelblue';//border='thin solid dimgray';
 		}
@@ -1580,7 +1577,7 @@ a:active {
 																		<td width="1"><img src="headersp.gif" width="1" height="24"></td>
 																		<td nowrap>&nbsp;&nbsp;<span id="spanDateReport"></span></td>
 																		<td width="1"><img src="headersp.gif" width="1" height="24"></td>
-																		<td nowrap align="right">&nbsp;&nbsp;&nbsp;&nbsp;<img src="carestream_samll.gif" width="73" height="18" align="absmiddle">
+																		<td nowrap align="right">&nbsp;&nbsp;&nbsp;&nbsp;<img src="carestream_small.gif" width="73" height="18" align="absmiddle">
 																			<a href="javascript:CloseAndExit()">&nbsp;&nbsp;<img src='close.gif' width='12' height='12' border='1' align='absmiddle'>&nbsp;&nbsp;</a>
 																		</td>
 																		<td nowrap>&nbsp;</td>
